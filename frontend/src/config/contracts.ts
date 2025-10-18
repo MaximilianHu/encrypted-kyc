@@ -1,5 +1,5 @@
 // EncryptedIdentity contract deployed on Sepolia
-export const CONTRACT_ADDRESS = '0x0000000000000000000000000000000000000000';
+export const CONTRACT_ADDRESS = '0x488aA1cd266cA6c6355A1131015a17F44614c1EA';
 
 // ABI copied from artifacts/contracts/EncryptedIdentity.sol/EncryptedIdentity.json
 export const CONTRACT_ABI = [
