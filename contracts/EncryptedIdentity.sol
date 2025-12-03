@@ -2,13 +2,13 @@
 pragma solidity ^0.8.24;
 
 import {FHE, euint32, eaddress, externalEuint32, externalEaddress} from "@fhevm/solidity/lib/FHE.sol";
-import {SepoliaConfig} from "@fhevm/solidity/config/ZamaConfig.sol";
+import {ZamaEthereumConfig} from "@fhevm/solidity/config/ZamaConfig.sol";
 
 /// @title Encrypted Identity Registry
 /// @notice Stores user info with mixed offchain and FHE encryption
 /// - Name is client-encrypted using the user's EVM address as key material and stored as string
 /// - Address, birthYear and countryId are stored as FHE ciphertexts
-contract EncryptedIdentity is SepoliaConfig {
+contract EncryptedIdentity is ZamaEthereumConfig {
     struct UserInfo {
         // Client-side encrypted name (e.g., base64 of AES-GCM payload)
         string nameCiphertext;
